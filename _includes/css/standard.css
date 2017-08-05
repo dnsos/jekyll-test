@@ -1,0 +1,45 @@
+.main-wrapper {
+  margin-top: 4rem;
+}
+
+@media (min-width: 750px) {
+  .main-wrapper {
+    margin-top: 10rem;
+  }
+}
+
+.intro {
+  margin-bottom: 2.5rem;
+}
+
+.intro h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+}
+
+.intro p {
+  margin-bottom: 1.8rem;
+}
+
+.intro a:hover {
+  box-shadow: inset 0 -0.8rem 0 rgb(220, 220, 220), 0 .2rem 0 rgb(220, 220, 220);
+}
+
+.intro a::before {
+  content: '______';
+  color: rgb(220, 220, 220);
+}
+
+.essay img {
+  width: 100%;
+  height: auto;
+}
+
+.meta {
+  font-family: "Courier", monospace;
+  color: rgb(140, 140, 140);
+}
+
+.meta:first-of-type {
+  margin-bottom: 0;
+}

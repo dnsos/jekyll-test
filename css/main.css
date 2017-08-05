@@ -1,3 +1,8 @@
-html {
-  font-family: Georgia, sans-serif;
-}
+---
+---
+
+/* Never touch this css file. All changes are made in _includes/css/ */
+
+{% include css/normalize.css %}
+{% include css/skeleton.css %}
+{% include css/standard.css %}

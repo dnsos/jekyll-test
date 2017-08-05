@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{page.title}} - {% endif %}Jekyll Test</title>
+    <title>{% if page.title %}{{page.title}} - {% endif %}The solar system</title>
     <meta name="description" content="{{page.meta}}">
 
     <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
@@ -10,14 +10,11 @@
 
   <body>
 
-    <header>
-      <h1>Jekyll Test</h1>
+    <main class="container">
 
-      {% include nav.html %}
+      {{content}}
 
-    </header>
-
-    {{content}}
+    </main>
 
   </body>
 </html>

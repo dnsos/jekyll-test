@@ -1,6 +1,29 @@
 ---
 layout: default
+meta: Articles about the planets of the solar system.
 ---
 
-<h1>Here's the front page</h1>
-<p>Front page, yeah!</p>
+<section class="row main-wrapper">
+
+  <section class="four columns intro">
+
+    <a href="{{site.baseurl}}/index"></a>
+    <h3>The solar system</h3>
+    <p>An overview of the planets of the solar system. By Jerry Smith.</p>
+    <a href="{{site.baseurl}}/index"></a>
+
+  </section>
+
+  <section class="eight columns">
+
+    <!-- Loops over every [article] with the category "essay". Limits the visible articles to x.-->
+    {% for article in site.categories.essay limit:5 %}
+    <article>
+      <h1><a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a></h1>
+      <p>{{article.meta}}</p>
+    </article>
+    {% endfor %}
+
+  </section>
+
+</section>

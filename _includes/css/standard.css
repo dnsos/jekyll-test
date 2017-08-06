@@ -1,3 +1,4 @@
+/* ------- general: main wrapper ------- */
 .main-wrapper {
   margin-top: 4rem;
 }
@@ -8,37 +9,56 @@
   }
 }
 
-.sidebar {
-  margin-bottom: 2.5rem;
+/* ------- general: sidebars ------- */
+.home-sidebar,
+.article-sidebar {
+  margin-bottom: 7.5rem;
 }
 
-.sidebar h3 {
+@media (min-width: 750px) {
+  .home-sidebar,
+  .article-sidebar {
+    position: sticky;
+    top: 10rem;
+  }
+}
+
+.home-sidebar h3 {
   margin-top: 2.5rem;
   margin-bottom: 0;
 }
 
-.sidebar p {
+.home-sidebar p {
   margin-bottom: 1.8rem;
 }
 
-.sidebar a:hover {
+.home-sidebar a:hover {
   box-shadow: inset 0 -0.8rem 0 rgb(220, 220, 220), 0 .2rem 0 rgb(220, 220, 220);
 }
 
-.sidebar a::before {
-  content: '______';
+.home-sidebar a::before,
+.article-sidebar a::before {
+  content: '__';
   color: rgb(220, 220, 220);
 }
 
+/* ------- article: sidebar ------- */
+.article-sidebar a:hover {
+  box-shadow: inset 0 -2.4rem 0 rgb(220, 220, 220), 0 .2rem 0 rgb(220, 220, 220);
+}
+
+/* ------- article: img ------- */
 .essay img {
   width: 100%;
   height: auto;
 }
 
+/* ------- home: article spacing bottom  ------- */
 article.overview {
   margin-bottom: 7.5rem;
 }
 
+/* ------- general: metadata  ------- */
 .meta p,
 .license p {
   margin-bottom: 0;

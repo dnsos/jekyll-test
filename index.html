@@ -5,7 +5,7 @@ meta: Articles about the planets of the solar system.
 
 <section class="row main-wrapper">
 
-  <section class="four columns intro">
+  <section class="four columns sidebar">
 
     <a href="{{site.baseurl}}/index"></a>
     <h3>The solar system</h3>
@@ -16,11 +16,14 @@ meta: Articles about the planets of the solar system.
 
   <section class="eight columns">
 
-    <!-- Loops over every [article] with the category "essay". Limits the visible articles to x.-->
-    {% for article in site.categories.essay limit:5 %}
-    <article>
+    <!-- Loops over every [article] in the folder "_posts". Limits the visible articles to x.-->
+    {% for article in site.posts limit:5 %}
+    <article class="overview">
       <h1><a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a></h1>
-      <p>{{article.meta}}</p>
+      <section class="meta">
+        <p>Category: {{article.category}}</p>
+      </section>
+      <p>{{article.excerpt}}</p>
     </article>
     {% endfor %}
 

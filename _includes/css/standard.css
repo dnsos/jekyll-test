@@ -8,24 +8,24 @@
   }
 }
 
-.intro {
+.sidebar {
   margin-bottom: 2.5rem;
 }
 
-.intro h3 {
+.sidebar h3 {
   margin-top: 2.5rem;
   margin-bottom: 0;
 }
 
-.intro p {
+.sidebar p {
   margin-bottom: 1.8rem;
 }
 
-.intro a:hover {
+.sidebar a:hover {
   box-shadow: inset 0 -0.8rem 0 rgb(220, 220, 220), 0 .2rem 0 rgb(220, 220, 220);
 }
 
-.intro a::before {
+.sidebar a::before {
   content: '______';
   color: rgb(220, 220, 220);
 }
@@ -35,11 +35,18 @@
   height: auto;
 }
 
-.meta {
+article.overview {
+  margin-bottom: 7.5rem;
+}
+
+.meta p,
+.license p {
+  margin-bottom: 0;
   font-family: "Courier", monospace;
   color: rgb(140, 140, 140);
 }
 
-.meta:first-of-type {
-  margin-bottom: 0;
+.meta p:last-of-type,
+.license p:last-of-type {
+  margin-bottom: 2.5rem;
 }

@@ -4,15 +4,21 @@ layout: default
 
 <section class="row main-wrapper">
 
-  <section class="four columns">
+  <section class="four columns sidebar">
     <a href="{{site.baseurl}}/index">Go back</a>
   </section>
 
   <section class="eight columns essay">
     <h1>{{page.title}}</h1>
-    <p class="meta">Published: {{page.published}}</p>
-    <p class="meta">License: {{page.license}}</p>
+    <section class="meta">
+      <p>Category: {{page.category}}</p>
+      <p>Published: {{page.published}}</p>
+    </section>
     {{content}}
+    <section class="license">
+      <p>License: {{page.license}}</p>
+      <p>Licensor: Test</p>
+    </section>
   </section>
 
 </section>

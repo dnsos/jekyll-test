@@ -15,13 +15,13 @@ excerpt: Articles about the planets of the solar system.
   <section class="eight columns">
 
     <!-- Loops over every [article] in the folder "_posts". Limits the visible articles to x.-->
-    {% for article in site.posts limit:5 %}
+    {% for page in site.posts limit:5 %}
     <article class="overview">
-      <h1><a href="{{site.baseurl}}{{article.url}}">{{article.title}}</a></h1>
+      <h1><a href="{{site.baseurl}}{{page.url}}">{{page.title}}</a></h1>
       <section class="meta">
-        <p>Category: {{article.category}}</p>
+        <p>{{page.category}}, {{page.published}}</p>
       </section>
-      <p>{{article.excerpt}}</p>
+      <p>{{page.excerpt}}</p>
     </article>
     {% endfor %}
 

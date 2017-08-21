@@ -82,3 +82,8 @@ article.overview {
 blockquote {
   margin-left: 2.5rem;
 }
+
+/* ------- general: footnotes  ------- */
+sup, sub {
+  font-size: 100%;
+}

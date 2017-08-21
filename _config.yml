@@ -3,5 +3,3 @@ highlighter: rouge
 baseurl: /jekyll-test
 exclude: ['README.md']
 permalink: pretty
-sass:
-    sass_dir: _scss

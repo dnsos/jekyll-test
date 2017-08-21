@@ -9,6 +9,15 @@
   }
 }
 
+/* ------- general: font ------- */
+.meta p,
+.license p,
+blockquote p {
+  font-family: "Courier", monospace;
+  font-style: normal;
+  color: rgb(140, 140, 140);
+}
+
 /* ------- general: sidebars ------- */
 .home-sidebar,
 .article-sidebar {
@@ -62,11 +71,14 @@ article.overview {
 .meta p,
 .license p {
   margin-bottom: 0;
-  font-family: "Courier", monospace;
-  color: rgb(140, 140, 140);
 }
 
 .meta p:last-of-type,
 .license p:last-of-type {
   margin-bottom: 2.5rem;
+}
+
+/* ------- article: blockquote  ------- */
+blockquote {
+  margin-left: 2.5rem;
 }

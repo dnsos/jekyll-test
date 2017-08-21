@@ -7,7 +7,6 @@ In order to work with this blog architecture, you need to have [Ruby](https://ww
 To have your blog running on localhost, navigate to your blog folder and run:
 ```
 jekyll serve --watch --baseurl ""
-}
 ```
 
 More to follow.
